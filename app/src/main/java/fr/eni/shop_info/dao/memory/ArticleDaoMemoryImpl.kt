@@ -11,7 +11,7 @@ class ArticleDaoMemoryImpl : ArticleDao {
 
     companion object {
 
-        private val articlesInMemory: MutableList<Article> = mutableListOf<Article>(
+         val articlesInMemory: MutableList<Article> = mutableListOf<Article>(
 
             Article(
                 id = 1,
