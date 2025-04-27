@@ -40,7 +40,7 @@ android {
 }
 
 dependencies {
-
+    val nav_version = "2.8.9"
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -59,5 +59,6 @@ dependencies {
     implementation("io.coil-kt.coil3:coil-compose:3.1.0")
     implementation("io.coil-kt.coil3:coil-network-okhttp:3.1.0")
     implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1")
+    implementation("androidx.navigation:navigation-compose:$nav_version")
 
 }

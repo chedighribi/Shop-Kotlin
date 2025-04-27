@@ -35,7 +35,7 @@ fun CalculatriceScreen(
 ) {
 
     Scaffold(
-        topBar = { TopBar() }
+        // topBar = { TopBar() }
     ) {
 
         Column(

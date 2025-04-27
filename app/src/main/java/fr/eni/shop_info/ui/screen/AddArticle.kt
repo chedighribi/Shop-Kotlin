@@ -29,6 +29,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
 import fr.eni.shop_info.ui.common.FormRowSurface
 import fr.eni.shop_info.ui.common.FormTextRow
 import fr.eni.shop_info.ui.common.TopBar
@@ -36,11 +37,12 @@ import fr.eni.shop_info.ui.common.TopBar
 
 @Composable
 fun ArticleFormScreen(
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    navController: NavHostController
 ) {
     val contextForToast = LocalContext.current.applicationContext
     Scaffold(
-        topBar = { TopBar() },
+        topBar = { TopBar(navController = navController) },
 
         ) {
 
@@ -162,5 +164,5 @@ fun DropdownCategories() {
 @Preview
 @Composable
 fun ArticleFormPreview() {
-    ArticleFormScreen()
+    // ArticleFormScreen()
 }
